@@ -1,3 +1,10 @@
+# The delivery API link is hardcoded in the project. Just run 
+```bash
+npm run dev
+```
+On the developer console and you would see "in the Index page" twice. 
+On state change, rerender is triggered but since pageModel is prefetched. Why does it still make a request to fetch the data? This can be seen in the developer console -> Network tab, look for call to resourceapi
+
 # Next.js SSR SPA
 
 Example Next.js SPA using the Bloomreach Experience [React SDK](https://www.npmjs.com/package/@bloomreach/react-sdk).  The app uses
